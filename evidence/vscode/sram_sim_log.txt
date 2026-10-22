@@ -1,0 +1,9 @@
+﻿# sram simulation log
+# date: 2026-10-23 00:37:03
+# tool: Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)
+# command: run_sim.bat sram
+=== iverilog compile: sram ===
+=== vvp run ===
+VCD info: dumpfile sram.vcd opened for output.
+PASS SRAM: 16 addresses, bus release, simultaneous request
+tb_sram.sv:44: $finish called at 164000 (1ps)

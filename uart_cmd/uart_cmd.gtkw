@@ -1,0 +1,15 @@
+[dumpfile] "uart_cmd.vcd"
+[timestart] 0
+[size] 1400 600
+@28
+tb.clk
+tb.rst
+tb.mcu_tx
+tb.dut.rx_valid
+@22
+tb.dut.rx_data[7:0]
+@28
+tb.pc_rx
+tb.led
+@22
+tb.low7[6:0]

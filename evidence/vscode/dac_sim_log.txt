@@ -1,0 +1,9 @@
+﻿# dac simulation log
+# date: 2026-10-23 00:37:03
+# tool: Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)
+# command: run_sim.bat dac
+=== iverilog compile: dac ===
+=== vvp run ===
+VCD info: dumpfile dac.vcd opened for output.
+PASS DAC: 260 writes, wraparound, channel, data hold, reset
+tb_dac.sv:33: $finish called at 10436000 (1ps)

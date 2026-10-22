@@ -1,0 +1,15 @@
+[dumpfile] "dac.vcd"
+[timestart] 0
+[size] 1400 600
+@28
+tb.clk
+tb.rst
+tb.channel
+tb.dut.update
+tb.we_n
+tb.cs_n
+tb.ldac_n
+tb.a_b
+@24
+tb.data[7:0]
+tb.led[7:0]

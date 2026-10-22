@@ -1,0 +1,9 @@
+﻿# uart_cmd simulation log
+# date: 2026-10-23 00:37:03
+# tool: Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)
+# command: run_sim.bat uart_cmd
+=== iverilog compile: uart_cmd ===
+=== vvp run ===
+VCD info: dumpfile uart_cmd.vcd opened for output.
+PASS UART_CMD: 8 echoes, LED 0/1/2 commands, other chars hold
+tb_uart_cmd.sv:53: $finish called at 12796000 (1ps)

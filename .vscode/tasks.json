@@ -1,0 +1,73 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "SIM: 서보모터 제어 (servo_ctrl)",
+            "type": "process",
+            "command": "cmd.exe",
+            "args": [
+                "/d",
+                "/c",
+                "run_sim.bat",
+                "servo_ctrl",
+                "wave"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "SIM: SRAM 읽기·쓰기 (sram)",
+            "type": "process",
+            "command": "cmd.exe",
+            "args": [
+                "/d",
+                "/c",
+                "run_sim.bat",
+                "sram",
+                "wave"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "SIM: DAC (dac)",
+            "type": "process",
+            "command": "cmd.exe",
+            "args": [
+                "/d",
+                "/c",
+                "run_sim.bat",
+                "dac",
+                "wave"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "SIM: MCU→FPGA UART 명령 (STM32_2 과제6·7) (uart_cmd)",
+            "type": "process",
+            "command": "cmd.exe",
+            "args": [
+                "/d",
+                "/c",
+                "run_sim.bat",
+                "uart_cmd",
+                "wave"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test",
+            "problemMatcher": []
+        }
+    ]
+}

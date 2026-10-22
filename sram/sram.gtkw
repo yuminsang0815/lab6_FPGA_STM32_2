@@ -1,0 +1,19 @@
+[dumpfile] "sram.vcd"
+[timestart] 0
+[size] 1400 600
+@28
+tb.wr
+tb.rd
+@24
+tb.address[3:0]
+tb.data_in[3:0]
+@28
+tb.cs_n
+tb.oe_n
+tb.we_n
+@24
+tb.ram_address[17:0]
+@22
+tb.bus[15:0]
+@24
+tb.led[7:0]

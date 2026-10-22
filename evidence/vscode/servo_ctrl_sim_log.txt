@@ -1,0 +1,9 @@
+﻿# servo_ctrl simulation log
+# date: 2026-10-23 00:37:02
+# tool: Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)
+# command: run_sim.bat servo_ctrl
+=== iverilog compile: servo_ctrl ===
+=== vvp run ===
+VCD info: dumpfile servo_ctrl.vcd opened for output.
+PASS servo: 20ms frame, 1/1.5/2ms pulse, limits, reset
+tb_servo_ctrl.sv:46: $finish called at 100036000 (1ps)

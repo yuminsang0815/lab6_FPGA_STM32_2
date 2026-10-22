@@ -1,0 +1,14 @@
+[dumpfile] "servo_ctrl.vcd"
+[timestart] 0
+[size] 1400 600
+@28
+tb.clk
+tb.rst
+tb.l
+tb.r
+@24
+tb.us[31:0]
+tb.pwm_dut.width_cycles[31:0]
+tb.pwm_dut.count[31:0]
+@28
+tb.servo

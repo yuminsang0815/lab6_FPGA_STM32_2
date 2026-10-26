@@ -1,15 +1,15 @@
 # Combo II-DLD S75 (xc7s75fgga484-1) / 서보모터 제어 (최상위 servo_board)
-# KEYPADS SEL 아래(Button Switch), 클록 스위치 F(50 MHz).
+# 핀 출처: 교재 [실습 25] Servo Motor PWM 제어 핀 표 (p.467~468). KEYPADS SEL 아래(Button Switch), 클록 스위치 F(50 MHz).
 set_property PACKAGE_PIN B6 [get_ports clk_50mhz]
 create_clock -name clk_50mhz -period 20.000 [get_ports clk_50mhz]
 
-# 키패드 SW_1 = 리셋(1.5 ms 중앙), SW_2 = 왼쪽(-0.1 ms), SW_3 = 오른쪽(+0.1 ms)
-set_property PACKAGE_PIN K4 [get_ports rst_p]
-set_property PACKAGE_PIN N8 [get_ports btn_left]
+# 교재와 같게: SW_1 = 왼쪽(l_ctrl), SW_2 = 리셋(resetn, 1.5 ms 중앙), SW_3 = 오른쪽(r_ctrl)
+set_property PACKAGE_PIN K4 [get_ports btn_left]
+set_property PACKAGE_PIN N8 [get_ports rst_p]
 set_property PACKAGE_PIN N4 [get_ports btn_right]
 
-# TODO(실험실): 교재 SERVO MOTOR 핀 구성표의 FPGA 핀 번호를 넣고 주석을 해제한다.
-# set_property PACKAGE_PIN ?? [get_ports servo]
+# 서보 PWM 출력: 교재 핀 구성표 SERVO = AA22 (p.468 표의 'A22'는 AA22의 오기로 보임)
+set_property PACKAGE_PIN AA22 [get_ports servo]
 
 # 현재 펄스 폭(0.1 ms 단위, 10~20) → LED1~LED8
 set_property PACKAGE_PIN L4 [get_ports {led_out[7]}]
